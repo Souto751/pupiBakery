@@ -1,0 +1,195 @@
+/*
+Display Configuration
+*/
+
+header, section, footer, aside, nav, article, hgroup
+{
+    display: block;
+}
+
+body
+{
+    background-image: url(../src/img/background.jpg);
+    background-color: #FFFFFF;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+/*
+Header
+*/
+
+@media only screen and (min-width: 1000px)
+{
+    .index_header
+    {
+        height: 10%;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .logo
+    {
+        width: 25%;
+        padding-left: 1%;
+        float: left;
+    }
+
+    .index_menu
+    {
+        text-align: right;
+        width: 70%;
+        float: left;
+    }
+
+    .index_menu li
+    {   
+        margin-top: 2.5%;
+        margin-bottom: 2%;
+        font: 17px Verdana;
+        list-style: none;
+        display: inline-block;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 999.9px)
+{
+    .index_header
+    {
+        height: 25%;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .logo
+    {
+        width: 25%;
+        padding-left: 1%;
+        float: left;
+    }
+
+    .index_menu
+    {
+        visibility: hidden;
+        float: left;
+    }
+
+    .index_menu li
+    {   
+        display: none;
+    }
+}
+
+/*
+Body
+*/
+
+.index_body
+{
+    clear: both;
+}
+
+.index_body h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1%;
+}
+
+#inicio
+{
+    border-top: solid 1px rgba(0, 0, 0, 0.582);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(to right, #FFFFFF, #e05bce);
+}
+
+#who
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(to left, #FFFFFF, #5adef0);
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.who_img
+{
+    width: 60%;
+    padding-left: 10%;
+}
+
+.who_left
+{
+    float: left;
+    width: 20%;
+}
+
+.who_rigth
+{
+    float: left;
+    width: 65%;
+}
+
+#who_txt
+{
+    font-size: 20px;
+}
+
+#cont
+{
+    clear: both;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(to right, #FFFFFF, #7dff63);
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.contacto_left
+{
+    float: left;
+    width: 75%;
+}
+
+.contacto_right
+{
+    float: left;
+    width: 20%;
+}
+
+.contacto_img
+{
+    width: 60%;
+    padding-right: 10%;
+}
+
+#contacto_txt
+{
+    font-size: 20px;
+}
+
+/*
+Footer
+*/
+
+.index_footer
+{
+    clear: both;
+    margin-top: 0;
+    height: 10%;
+    color: #000000;
+    font: bold;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+}
