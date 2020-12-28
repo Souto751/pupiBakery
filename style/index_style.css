@@ -100,6 +100,7 @@ body
     {
         top: 89px;
         left: 0;
+        background: #c6f7f5f7;
     }
 
     .mobile-menu-opts
@@ -142,27 +143,65 @@ body
 
     .main
     {
+        display: block;
         justify-content: center;
     }
 
     .main__featured
     {
+        background: #c4faf8a8;
         position: relative;
-        display: flex;
-        justify-content: center;
         margin-top: 5vh;
         min-height: 300px;
-        height: 25vh;
+        height: 50vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main__featured-img
     {
-        box-shadow: 1px 1px 10px 10px #000000a7;
-        object-fit: cover;
-        height: 100%;
-        max-width: 90vw;
+        object-fit:contain;
+        height: 70%;
+        width: 50%;
         animation: featured_gallery 25s;
         animation-iteration-count: infinite;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 1px 1px 5px #000000a7;
+        min-height: 200px;
+        min-width: 300px;
+    }
+
+    .main__order
+    {
+        background: #c4faf8a8;
+        position: relative;
+        margin-top: 5vh;
+        min-height: 300px;
+        height: 50vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__button
+    {
+        color: #acdc32;
+        text-decoration: underline;
+        text-shadow: 1px 1px 5px #000;
+        font-family:'Hanalei Fill', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .footer
+    {
+        background: #c4faf8a8;
+        margin-top: 5vh;
+        width: 100vw;
+        min-height: 100px;
     }
 }
 
@@ -184,6 +223,7 @@ body
     {
         display: flex;
         position: relative;
+        position: sticky;
         margin-top: 1vh;
         width: 100vw;
         height: 150px;
@@ -239,24 +279,59 @@ body
 
     .main__featured
     {
+        background: #c4faf8a8;
         position: relative;
-        display: flex;
         margin-top: 5vh;
-        width: 100vw;
         min-height: 300px;
-        height: 25vh;
-        justify-content: center;
+        height: 50vh;
+        width: 45vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
     }
 
     .main__featured-img
     {
-        box-shadow: 1px 1px 10px 10px #000000a7;
-        object-fit: contain;
-        height: 100%;
+        object-fit:scale-down;
+        height: 70%;
         animation: featured_gallery 25s;
         animation-iteration-count: infinite;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 200px;
+        max-width: 300px;
+        text-shadow: 1px 1px 5px #000000a7;
     }
 
+    .main__order
+    {
+        background: #c4faf8a8;
+        position: relative;
+        margin-top: 5vh;
+        min-height: 300px;
+        height: 50vh;
+        width: 45vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    .main__button
+    {
+        color: #acdc32;
+        text-decoration: underline;
+        text-shadow: 1px 1px 5px #000;
+        font-family:'Hanalei Fill', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .footer
+    {
+        background: #c4faf8a8;
+        margin-top: 5vh;
+        width: 100vw;
+        min-height: 100px;
+    }
 }
 
 
