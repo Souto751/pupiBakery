@@ -39,18 +39,19 @@ body
         position: relative;
         margin-top: 1vh;
         min-width: 320px;
-        width: 100%;
+        width: calc(100% - 10px);
         height: 100px;
         background: #c4faf8a8;
         z-index: 7;
-        border-bottom: 5px solid #000a;
+        border: 5px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .header__logo
     {
         position: absolute;
         height: 100px;
-        left: 40%;
+        right: 0;
     }
 
     .header__nav__li
@@ -88,7 +89,7 @@ body
         background: #c6f7f5a8;
         left: -105vw;
         top: 89px;
-        height: calc(97vh - 91px);
+        height: 97vh;
         width: 125px;
         z-index: 1;
         list-style: none;
@@ -99,8 +100,10 @@ body
     #checkbox_menu:checked ~ .header__mobile-menu__options
     {
         top: 89px;
-        left: 0;
+        left: -2vw;
         background: #c6f7f5f7;
+        border-right: 7px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .mobile-menu-opts
@@ -125,8 +128,10 @@ body
             flex-direction: row;
             margin-bottom: 25px;
             height: 110px;
-            width: 94vw;
+            width: 96vw;
             justify-content: center;
+            border-bottom: 7px solid transparent;
+            border-image: url("../src/img/border.png") 30 round;
         }
 
         .mobile-menu-opts
@@ -154,9 +159,11 @@ body
         margin-top: 5vh;
         min-height: 300px;
         height: 50vh;
-        width: 100vw;
+        width: calc(100vw - 20px);
         margin-left: auto;
         margin-right: auto;
+        border: 10px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .main__featured-img
@@ -181,9 +188,11 @@ body
         margin-top: 5vh;
         min-height: 300px;
         height: 50vh;
-        width: 100vw;
+        width: calc(100vw - 20px);
         margin-left: auto;
         margin-right: auto;
+        border: 10px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .main__button
@@ -193,6 +202,7 @@ body
         text-shadow: 1px 1px 5px #000;
         font-family:'Hanalei Fill', cursive;
         font-size: 30px;
+        margin-top: 0;
         text-align: center;
     }
 
@@ -202,6 +212,8 @@ body
         margin-top: 5vh;
         width: 100vw;
         min-height: 100px;
+        border-top: 7px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 }
 
@@ -233,8 +245,12 @@ body
 
     .header__logo
     {
+        margin-top:-1vh;
         height: 100%;
         order: 7;
+        border: 10px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
+        background: #b5e6e4;
     }
 
     .header__nav-1
@@ -282,11 +298,13 @@ body
         background: #c4faf8a8;
         position: relative;
         margin-top: 5vh;
-        min-height: 300px;
+        min-height: 350px;
         height: 50vh;
         width: 45vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+        border: 7px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .main__featured-img
@@ -308,11 +326,13 @@ body
         background: #c4faf8a8;
         position: relative;
         margin-top: 5vh;
-        min-height: 300px;
+        min-height: 350px;
         height: 50vh;
         width: 45vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+        border: 7px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 
     .main__button
@@ -322,15 +342,18 @@ body
         text-shadow: 1px 1px 5px #000;
         font-family:'Hanalei Fill', cursive;
         font-size: 30px;
+        margin-top: 0;
         text-align: center;
     }
 
     .footer
     {
-        background: #c4faf8a8;
+        background: #c4faf8;
         margin-top: 5vh;
         width: 100vw;
-        min-height: 100px;
+        min-height: 110px;
+        border-top: 7px solid transparent;
+        border-image: url("../src/img/border.png") 30 round;
     }
 }
 
