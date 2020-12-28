@@ -158,8 +158,9 @@ body
     .main__featured-img
     {
         box-shadow: 1px 1px 10px 10px #000000a7;
-        object-fit: contain;
+        object-fit: cover;
         height: 100%;
+        max-width: 90vw;
         animation: featured_gallery 25s;
         animation-iteration-count: infinite;
     }
