@@ -1,7 +1,7 @@
 # Pupi's Bakery:cake:
 
 <img src="https://github.com/Souto751/pupiBakery/blob/main/public/img/pupi_logo.png?raw=true" alt="html" width="320px" align="right" />
-<a href="https://souto751.github.io/watchlist/" target="_blank" rel="noreferrer">Pupi's Bakery</a> is a website for a bakery, which has lots of delicious stuff. Come and see! <br />
+<a href="https://pupi-bakery.web.app/" target="_blank" rel="noreferrer">Pupi's Bakery</a> is a website for a bakery, which has lots of delicious stuff. Come and see! <br />
 
 ## What you will find
 
