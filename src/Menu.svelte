@@ -1,5 +1,27 @@
 <script>
+    let budines = [         //Change name
+        {id:"Budin 1", path:"img/menu/budin1.jpeg", price:350, ingredients:"Ingredients..."},
+        {id:"Budin 2", path:"img/menu/budin2.jpeg", price:375, ingredients:"Ingredients..."},
+        {id:"Budin 3", path:"img/menu/budin3.jpeg", price:330, ingredients:"Ingredients..."}
+    ]
     
+    let cookies = [         //Change name
+        {id:"Cookie 1", path:"img/menu/cookie1.jpeg", price:125, ingredients:"Ingredients..."},
+        {id:"Cookie 2", path:"img/menu/cookie2.jpeg", price:200, ingredients:"Ingredients..."},
+        {id:"Cookie 3", path:"img/menu/cookie3.jpeg", price:170, ingredients:"Ingredients..."}
+    ]
+
+    
+    let tarteletas = [         //Change name
+        {id:"Tarteleta 1", path:"img/menu/tarteleta1.jpeg", price:240, ingredients:"Ingredients..."}
+    ]
+
+    
+    let cakes = [         //Change name
+        {id:"Cake 1", path:"img/menu/cake1.jpeg", price:500, ingredients:"Ingredients..."},
+        {id:"Cake 2", path:"img/menu/cake2.png", price:530, ingredients:"Ingredients..."},
+        {id:"Cake 3", path:"img/menu/cake3.jpeg", price:540, ingredients:"Ingredients..."}
+    ]
 </script>
 
 <section id="menu">
@@ -7,69 +29,77 @@
     <div class="budines">   <!--Change class name-->
         <h3>Budines</h3>   <!--Change txt-->
         <div class="justifyCards">
-            <div class="menuCard">
-                <img src="img/menu/budin.jpeg" alt="menu" class="menuCardImg"/>
-                <div class="menuCardInfo">
-                    <div class="menuCardInfoTop">
-                        <p>Budinupi</p>
-                        <p class="price">$500</p>
-                    </div>
-                    <div class="menuCardInfoBottom">
-                        <p>Ingredients...</p>
+            {#each budines as budin}
+                <div class="menuCard">
+                    <img src={budin.path} alt="menu" class="menuCardImg"/>
+                    <div class="menuCardInfo">
+                        <div class="menuCardInfoTop">
+                            <p>{budin.id}</p>
+                            <p class="price">${budin.price}</p>
+                        </div>
+                        <div class="menuCardInfoBottom">
+                            <p>{budin.ingredients}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/each}
         </div>
     </div>
     <div class="tortas">   <!--Change class name-->
-        <h3>Tortas</h3>   <!--Change txt-->
+        <h3>Cakes</h3>   <!--Change txt-->
         <div class="justifyCards">
-            <div class="menuCard">
-                <img src="img/menu/carousel4.png" alt="menu" class="menuCardImg"/>
-                <div class="menuCardInfo">
-                    <div class="menuCardInfoTop">
-                        <p>Tortupi</p>
-                        <p class="price">$900</p>
-                    </div>
-                    <div class="menuCardInfoBottom">
-                        <p>Ingredients...</p>
+            {#each cakes as cake}
+                <div class="menuCard">
+                    <img src={cake.path} alt="menu" class="menuCardImg"/>
+                    <div class="menuCardInfo">
+                        <div class="menuCardInfoTop">
+                            <p>{cake.id}</p>
+                            <p class="price">${cake.price}</p>
+                        </div>
+                        <div class="menuCardInfoBottom">
+                            <p>{cake.ingredients}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/each}
         </div>
     </div>
     <div class="galletas">   <!--Change class name-->
-        <h3>Galletas</h3>   <!--Change txt--> 
+        <h3>Cookies</h3>   <!--Change txt--> 
         <div class="justifyCards">
-            <div class="menuCard">
-                <img src="img/menu/cookie.jpeg" alt="menu" class="menuCardImg"/>
-                <div class="menuCardInfo">
-                    <div class="menuCardInfoTop">
-                        <p>Galletupi</p>
-                        <p class="price">$200 / kg</p>
-                    </div>
-                    <div class="menuCardInfoBottom">
-                        <p>Ingredients...</p>
+            {#each cookies as cookie}
+                <div class="menuCard">
+                    <img src={cookie.path} alt="menu" class="menuCardImg"/>
+                    <div class="menuCardInfo">
+                        <div class="menuCardInfoTop">
+                            <p>{cookie.id}</p>
+                            <p class="price">${cookie.price} / kg</p>
+                        </div>
+                        <div class="menuCardInfoBottom">
+                            <p>{cookie.ingredients}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/each}
         </div>
     </div>
     <div class="tarteletas">   <!--Change class name-->
-        <h3>Tartaletas</h3>   <!--Change txt-->
+        <h3>Tarteletas</h3>   <!--Change txt-->
         <div class="justifyCards">
-            <div class="menuCard">
-                <img src="img/menu/tartaleta.jpeg" alt="menu" class="menuCardImg"/>
-                <div class="menuCardInfo">
-                    <div class="menuCardInfoTop">
-                        <p>Tartelupi</p>
-                        <p class="price">$325</p>
-                    </div>
-                    <div class="menuCardInfoBottom">
-                        <p>Ingredients...</p>
+            {#each tarteletas as tarteleta}
+                <div class="menuCard">
+                    <img src={tarteleta.path} alt="menu" class="menuCardImg"/>
+                    <div class="menuCardInfo">
+                        <div class="menuCardInfoTop">
+                            <p>{tarteleta.id}</p>
+                            <p class="price">${tarteleta.price}</p>
+                        </div>
+                        <div class="menuCardInfoBottom">
+                            <p>{tarteleta.ingredients}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/each}
         </div>
     </div>
 </section>
@@ -93,6 +123,14 @@
         font-family: 'Brush Script MT', cursive;
         font-size: 50px;
         line-height: 50px;
+        text-shadow: 0 0 5px #14d2cf;
+    }
+
+    h3{
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 40px;
+        line-height: 40px;
     }
 
     .budines{
@@ -102,9 +140,10 @@
 
     .menuCard{
         display: flex;
+        background: #eee;
         width: 20vw;
         min-width: 200px;
-        box-shadow: 0 0 10px #15e8e5;
+        box-shadow: 0 0 10px #14d2cf;
         border-radius: 10px;
         min-height: 100px;
         transition: transform .2s;
@@ -121,6 +160,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        gap: 20px;
     }
 
     .menuCardImg{

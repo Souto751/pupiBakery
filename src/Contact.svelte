@@ -47,7 +47,7 @@
         position: relative;
         width: 100vw;
         min-height: 100vh;
-        background: #15e8e5;
+        background: #14d2cf;
         background-size: cover;
         z-index: 100;
         display: flex;
@@ -74,7 +74,7 @@
 
     h3{
         text-align: center;
-        color: #15e8e5;
+        color: #14d2cf;
     }
 
     .subtitle{
@@ -98,7 +98,7 @@
     }
 
     input:focus, .input:focus{
-        border-bottom: 2px solid #15e8e5;
+        border-bottom: 2px solid #14d2cf;
     }
 
     textarea{
@@ -109,7 +109,7 @@
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        background: #15e8e5;
+        background: #14d2cf;
         border-radius: 10px;
         font-weight: bold;
     }

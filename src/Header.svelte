@@ -5,7 +5,7 @@
 <header class="header">
     <img src={src} alt="bakery logo" class="logo" />
     <div class="linksDiv">
-        <a href="#" >Home</a>
+        <a href="#top" >Home</a>
         <a href="#gallery" >Gallery</a>
         <a href="#menu" >Menu</a>
         <a href="#contact" >Contact</a>
@@ -45,7 +45,7 @@
     }
 
     a:hover{
-        color: #15e8e5;
+        color: #14d2cf;
     }
 
     @media screen and (max-width: 600px){

@@ -19,7 +19,7 @@
     #gallery{
         position:relative;
         width: 100vw;
-        background: #15e8e5;
+        background: #14d2cf;
         z-index: 1000;
     }
 

@@ -18,7 +18,7 @@
     
 </script>
 
-<div class="carousel">
+<div class="carousel" id="top">
     <Header />
     <div id="darkenCarousel"></div>
     <div id="carousel-container">
